@@ -1,0 +1,5 @@
+create a directory
+in terminal: 
+npm init -y
+npm install express
+then create a sub directory 'src'

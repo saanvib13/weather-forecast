@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{title}}</title>
+    <link rel="icon" href="/img/icon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+    {{!-- For Node.js applications, check your configuration:
+
+    app.use(express.static(__dirname + '/public'));
+    Notice that /public does not have a forward slash at the end, so you will need to include it in your href option of
+    your HTML:
+
+    href="/css/style.css"> --}}
+</head>
+
+<body>
+    {{!-- to include code from partials: --}}
+    <div class="main-content">
+        {{>header}}
+        <div class="forecast">
+        <h3>Enter the location</h3>
+        
+        <form action="">
+            <input class="location" type="text" placeholder="Enter Location">
+            <input class="submit" type="submit" value="Submit">
+        </form>
+        <p class="message-one"></p>
+        <p class="message-two"></p>
+        <div class="img"></div>
+        </div>        
+    </div>
+
+    {{>footer}}
+
+
+</body>
+<script src="/js/app.js"></script>
+
+</html>

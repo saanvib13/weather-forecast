@@ -1,0 +1,88 @@
+body{
+   margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header div{
+    display: flex;
+    justify-content: center;
+
+}
+h1{
+    color:#505050;
+    font-size: 36px;
+}
+h3{
+    color: #707070;
+}
+
+.forecast{
+    margin-left: 3%;
+
+}
+.forecast form .location{
+    padding: 15px;
+    width: 45%;
+}
+
+.submit{
+    padding: 15px;
+    cursor: pointer;
+}
+
+img{
+    width: 180px;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+p:not(.footer p),h2{
+    margin-left: 3%;
+}
+.header{
+    background-color: rgb(5, 98, 132);
+    padding: 12px;
+    max-width: 100%;
+    overflow-y: hidden;
+
+    text-align: center;
+
+}
+.header div{
+    padding: 10px;;
+    justify-content: center;
+}
+.header div a{
+    margin-right: 20px;
+    color: white;
+    padding: 10.5px;
+    position: relative;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    color: white;
+}
+
+
+.header div a:hover{
+    /* border-bottom: 2px solid rgb(163, 163, 163);
+    border-right: 2px solid rgb(163, 163, 163);; */
+    box-shadow: 4px 5px 9px 0 rgb(123, 198, 255);
+    border-radius: 3px;
+    border-bottom-right-radius: 15px !important;
+}
+
+.main-content{
+    flex-grow:1;
+}
+
+
+footer{
+    overflow-y: hidden;
+    padding: 8px;
+    color: white;
+    max-width: 100%;
+    background-color: rgb(5, 98, 132);
+    text-align: center;
+}
