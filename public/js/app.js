@@ -53,7 +53,12 @@ getForecast.addEventListener('submit', (e) => {
             return res.json()
         }
     }).then((data) => {
-        if (data.err) return console.log('location is not correct');
+        if (data.err){  console.log('location is not correct');
+        postForecast=data.err
+        para2.innerHTML=postForecast
+        img.innerHTML='Enter a valid location'
+    }
+    else{
         console.log(data)
         postForecast='The current temperature  is '+data.temperature+' degrees (in C). It feels like '+data.feelslike+' degrees.'
         para1.innerHTML=data.location
@@ -116,7 +121,7 @@ getForecast.addEventListener('submit', (e) => {
                 img.innerHTML='<img src="/img/heavy-drizzle.png" alt="thunder_img">'
                 break;
             }
-        }
+        }}
     });
 
 

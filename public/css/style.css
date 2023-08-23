@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 16px;
 }
 header div{
     display: flex;
@@ -14,22 +15,36 @@ h1{
     color:#505050;
     font-size: 36px;
 }
-h3{
+h2{
     color: #707070;
 }
 
 .forecast{
-    margin-left: 3%;
-
+    margin: 4% auto;
+    width: 45%;
+    border: 1px solid rgb(216, 216, 216);
+    border-top: none;
+    border-left: none;
+    box-shadow: 5px 5px 5px 3px rgb(166, 166, 166);
+    border-radius: 20px;
+    padding: 15px;
 }
 .forecast form .location{
     padding: 15px;
     width: 45%;
+    margin-left: 2%;
+    font-size: 16px;
 }
 
 .submit{
-    padding: 15px;
+    padding: 12px;
     cursor: pointer;
+    font-size: 16px;
+    /* border: none; */
+    border: 2px solid grey;
+    background-color: rgb(152, 193, 255);
+    border-radius: 5px;
+    margin-left: 4%;
 }
 
 img{
@@ -38,7 +53,16 @@ img{
     margin-top: 2%;
 }
 
-p:not(.footer p),h2{
+.message-one,.message-two{
+    margin-left:2%;
+    font-size: 16px;
+}
+
+.img{
+    margin-left: 2%;
+}
+
+p:not(.footer p,.message-one,.message-two),h2{
     margin-left: 3%;
 }
 .header{
